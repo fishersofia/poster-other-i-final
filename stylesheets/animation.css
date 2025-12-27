@@ -1,0 +1,1399 @@
+/* ================== АНИМАЦИИ ================== */
+
+/* Анимация плавного движения людей */
+@keyframes gentleHumanMovement {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  15% {
+    opacity: 1;
+    transform: translateY(-0.2%);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  34% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Анимация для врачей */
+.doctor-slide-1,
+.doctor-slide-2,
+.doctor-slide-3 {
+  position: absolute;
+  top: 1vw;
+  left: -10vw;
+  width: 43.9vw;
+  height: 65.8vw;
+  z-index: 2;
+  opacity: 0;
+  animation: gentleHumanMovement 9s infinite;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.doctor-slide-1 {
+  animation-delay: 0s;
+}
+.doctor-slide-2 {
+  animation-delay: 3s;
+}
+.doctor-slide-3 {
+  animation-delay: 6s;
+}
+
+/* Анимация для полицейских */
+.police-slide-1,
+.police-slide-2,
+.police-slide-3 {
+  position: absolute;
+  top: 11vw;
+  left: 32vw;
+  width: 43.9vw;
+  height: 55.8vw;
+  z-index: 3;
+  object-fit: contain;
+  opacity: 0;
+  animation: gentleHumanMovement 9s infinite;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.police-slide-1 {
+  animation-delay: 0s;
+}
+.police-slide-2 {
+  animation-delay: 3s;
+}
+.police-slide-3 {
+  animation-delay: 6s;
+}
+
+/* Анимация для пожарных */
+.fireman-slide-1,
+.fireman-slide-2,
+.fireman-slide-3 {
+  position: absolute;
+  top: 0vw;
+  left: 10vw;
+  width: 43.9vw;
+  height: 70.8vw;
+  z-index: 3;
+  opacity: 0;
+  animation: gentleHumanMovement 9s infinite;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fireman-slide-1 {
+  animation-delay: 0s;
+}
+.fireman-slide-2 {
+  animation-delay: 3s;
+}
+.fireman-slide-3 {
+  animation-delay: 6s;
+}
+
+/* ================== ЦВЕТЫ ================== */
+
+/* Общие стили для цветов */
+.blue-flower,
+.yellow-flower,
+.orange-flower,
+.red-flower,
+.green-flower,
+.pink-flower {
+  position: absolute;
+  z-index: 2;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform-origin: center center;
+}
+
+/* Голубой цветок */
+.blue-flower {
+  width: 4vw;
+  height: 3.9vw;
+  top: 3vw;
+  left: 60vw;
+  animation: blueSpin 3s infinite;
+}
+
+@keyframes blueSpin {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(90deg) scale(1.05);
+  }
+  50% {
+    transform: rotate(180deg) scale(1);
+  }
+  75% {
+    transform: rotate(270deg) scale(0.95);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+/* Желтый цветок */
+.yellow-flower {
+  width: 6.5vw;
+  height: 6.3vw;
+  top: 8vw;
+  left: 56.5vw;
+  animation: yellowSpin 4s linear infinite,
+    yellowBreathe 1.5s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+@keyframes yellowSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes yellowBreathe {
+  0%,
+  100% {
+    transform: scale(1);
+    filter: brightness(1) contrast(1);
+  }
+  50% {
+    transform: scale(1.08);
+    filter: brightness(1.1) contrast(1.05);
+  }
+}
+
+/* Оранжевый цветок */
+.orange-flower {
+  width: 5.4vw;
+  height: 5.2vw;
+  top: 5.5vw;
+  left: 50vw;
+  animation: orangePulseSpin 3s infinite;
+}
+
+@keyframes orangePulseSpin {
+  0% {
+    transform: rotate(0deg) scale(0.9);
+    filter: brightness(1);
+  }
+  33% {
+    transform: rotate(120deg) scale(1.1);
+    filter: brightness(1.2);
+  }
+  66% {
+    transform: rotate(240deg) scale(0.95);
+    filter: brightness(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(0.9);
+    filter: brightness(1);
+  }
+}
+
+/* Красный цветок */
+.red-flower {
+  width: 4vw;
+  height: 3.9vw;
+  top: 10.5vw;
+  left: 46.2vw;
+  animation: redFigureEight 3s infinite;
+}
+
+@keyframes redFigureEight {
+  0% {
+    transform: translateX(0) translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateX(0.4vw) translateY(0.2vw) rotate(90deg);
+  }
+  50% {
+    transform: translateX(0) translateY(0.4vw) rotate(180deg);
+  }
+  75% {
+    transform: translateX(-0.4vw) translateY(0.2vw) rotate(270deg);
+  }
+  100% {
+    transform: translateX(0) translateY(0) rotate(360deg);
+  }
+}
+
+/* Зеленый цветок */
+.green-flower {
+  width: 4.2vw;
+  height: 4.1vw;
+  top: 1.5vw;
+  left: 46vw;
+  animation: greenSpiral 5s infinite;
+}
+
+@keyframes greenSpiral {
+  0% {
+    transform: rotate(0deg) scale(1) translateY(0);
+  }
+  33% {
+    transform: rotate(120deg) scale(1.3) translateY(-0.3vw);
+  }
+  66% {
+    transform: rotate(240deg) scale(0.8) translateY(0.2vw);
+  }
+  100% {
+    transform: rotate(360deg) scale(1) translateY(0);
+  }
+}
+
+/* Розовый цветок */
+.pink-flower {
+  width: 4vw;
+  height: 3.9vw;
+  top: 1.5vw;
+  left: 55vw;
+  animation-timing-function: ease-in-out;
+  animation: pinkChaos 3.5s infinite;
+}
+
+@keyframes pinkChaos {
+  0% {
+    transform: rotate(0deg) skewX(0deg) scale(1);
+  }
+  20% {
+    transform: rotate(45deg) skewX(5deg) scale(1.1);
+  }
+  40% {
+    transform: rotate(120deg) skewX(-3deg) scale(0.9);
+  }
+  60% {
+    transform: rotate(200deg) skewX(8deg) scale(1.05);
+  }
+  80% {
+    transform: rotate(300deg) skewX(-5deg) scale(0.95);
+  }
+  100% {
+    transform: rotate(360deg) skewX(0deg) scale(1);
+  }
+}
+
+/* ================== КРУГИ SKINYOURSKIN ================== */
+
+.skinyourskin1 {
+  width: 3.1vw;
+  height: 3.1vw;
+}
+.skinyourskin2 {
+  width: 5.8vw;
+  height: 5.8vw;
+}
+.skinyourskin3 {
+  width: 8.2vw;
+  height: 8.2vw;
+}
+.skinyourskin4 {
+  width: 11.3vw;
+  height: 11.3vw;
+}
+.skinyourskin5 {
+  width: 15.5vw;
+  height: 15.5vw;
+}
+.skinyourskin6 {
+  width: 21.3vw;
+  height: 21.3vw;
+  z-index: 3;
+}
+
+/* Вращение */
+@keyframes spin1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes spin3 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin4 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes spin5 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin6 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+/* Пульсация */
+@keyframes pulse1 {
+  0%,
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(180deg);
+  }
+}
+
+@keyframes pulse2 {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.95);
+    opacity: 0.9;
+  }
+}
+
+@keyframes pulse3 {
+  0%,
+  100% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+  50% {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+  }
+}
+
+@keyframes pulse4 {
+  0%,
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.08) rotate(90deg);
+  }
+  75% {
+    transform: scale(0.95) rotate(270deg);
+  }
+}
+
+@keyframes pulse5 {
+  0% {
+    transform: scale(1);
+  }
+  33% {
+    transform: scale(1.12);
+  }
+  66% {
+    transform: scale(0.93);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse6 {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+/* Применение анимаций */
+.skinyourskin1 {
+  animation: spin1 25s linear infinite, pulse1 4s ease-in-out infinite;
+}
+.skinyourskin2 {
+  animation: spin2 20s linear infinite reverse, pulse2 3s ease-in-out infinite;
+}
+.skinyourskin3 {
+  animation: spin3 15s linear infinite, pulse3 5s ease-in-out infinite;
+}
+.skinyourskin4 {
+  animation: spin4 12s linear infinite reverse, pulse4 2.5s ease-in-out infinite;
+}
+.skinyourskin5 {
+  animation: spin5 8s linear infinite, pulse5 6s ease-in-out infinite;
+}
+.skinyourskin6 {
+  animation: spin6 6s linear infinite reverse, pulse6 3.5s ease-in-out infinite;
+}
+
+/* ================== СПИРАЛЬ ================== */
+
+.spiral {
+  object-fit: contain;
+  position: absolute;
+  width: 19.2vw;
+  height: 19.6vw;
+  animation: hyperSpin 4s linear infinite;
+  transform-origin: center center;
+}
+
+@keyframes hyperSpin {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(90deg) scale(1.05);
+  }
+  50% {
+    transform: rotate(180deg) scale(1);
+  }
+  75% {
+    transform: rotate(270deg) scale(1.05);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+/* ================== ТЕКСТОВЫЕ КВАДРАТЫ (ПРОФЕССИИ) ================== */
+
+/* Градиенты для квадратов */
+.text-square:nth-child(1)::before,
+.text-square:nth-child(10)::before {
+  background: linear-gradient(135deg, #ff00ff 0%, #9d00ff 50%, #00ffff 100%);
+}
+
+.text-square:nth-child(2)::before,
+.text-square:nth-child(11)::before {
+  background: linear-gradient(135deg, #ff0000 0%, #ff8800 50%, #ffff00 100%);
+}
+
+.text-square:nth-child(3)::before,
+.text-square:nth-child(12)::before {
+  background: linear-gradient(135deg, #0066ff 0%, #00ccff 50%, #00ffff 100%);
+}
+
+.text-square:nth-child(4)::before {
+  background: linear-gradient(135deg, #00ff00 0%, #00ff88 50%, #00ffcc 100%);
+}
+
+.text-square:nth-child(5)::before {
+  background: linear-gradient(135deg, #ff00cc 0%, #ff0066 50%, #ff3300 100%);
+}
+
+.text-square:nth-child(6)::before {
+  background: linear-gradient(135deg, #ffdd00 0%, #ffaa00 50%, #ff7700 100%);
+}
+
+.text-square:nth-child(7)::before {
+  background: linear-gradient(135deg, #00ffaa 0%, #00ffff 50%, #0088ff 100%);
+}
+
+.text-square:nth-child(8)::before {
+  background: linear-gradient(135deg, #ff00ff 0%, #cc00ff 50%, #9900ff 100%);
+}
+
+.text-square:nth-child(9)::before {
+  background: linear-gradient(135deg, #ccff00 0%, #00ff00 50%, #00ff99 100%);
+}
+
+.text-square:nth-child(13)::before {
+  background: linear-gradient(135deg, #3300ff 0%, #6600ff 50%, #9900ff 100%);
+}
+
+.text-square:nth-child(14)::before {
+  background: linear-gradient(135deg, #ff5500 0%, #ffaa00 50%, #ffff00 100%);
+}
+
+/* Анимации для текстовых квадратов */
+@keyframes colorCycle {
+  0% {
+    background-color: #ffffff;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  40% {
+    background-color: #ffffff;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  50% {
+    background-color: transparent;
+    box-shadow: 0 0.3vw 0.8vw rgba(0, 0, 0, 0.15);
+  }
+  90% {
+    background-color: transparent;
+    box-shadow: 0 0.3vw 0.8vw rgba(0, 0, 0, 0.15);
+  }
+  100% {
+    background-color: #ffffff;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes showGradient {
+  0%,
+  40% {
+    opacity: 0;
+  }
+  50%,
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes textGlow {
+  0%,
+  40% {
+    color: #000000;
+    text-shadow: none;
+  }
+  50%,
+  90% {
+    color: #000000 !important;
+  }
+  100% {
+    color: #000000;
+    text-shadow: none;
+  }
+}
+
+@keyframes floatUp {
+  0%,
+  40% {
+    transform: translateY(0);
+  }
+  50%,
+  90% {
+    transform: translateY(-0.2vw);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Применение анимаций к квадратам */
+.text-square::before {
+  animation: showGradient 8s infinite alternate;
+  animation-timing-function: ease-in-out;
+  animation-delay: calc(var(--item-index, 0) * 0.2s);
+}
+
+.text-square {
+  animation: colorCycle 8s infinite alternate, textGlow 8s infinite alternate,
+    floatUp 8s infinite alternate;
+  animation-timing-function: ease-in-out;
+  animation-delay: calc(var(--item-index, 0) * 0.2s);
+}
+
+/* Переменные задержек для каждого квадрата */
+.text-square:nth-child(1) {
+  --item-index: 1;
+}
+.text-square:nth-child(2) {
+  --item-index: 2;
+}
+.text-square:nth-child(3) {
+  --item-index: 3;
+}
+.text-square:nth-child(4) {
+  --item-index: 4;
+}
+.text-square:nth-child(5) {
+  --item-index: 5;
+}
+.text-square:nth-child(6) {
+  --item-index: 6;
+}
+.text-square:nth-child(7) {
+  --item-index: 7;
+}
+.text-square:nth-child(8) {
+  --item-index: 8;
+}
+.text-square:nth-child(9) {
+  --item-index: 9;
+}
+.text-square:nth-child(10) {
+  --item-index: 10;
+}
+.text-square:nth-child(11) {
+  --item-index: 11;
+}
+.text-square:nth-child(12) {
+  --item-index: 12;
+}
+.text-square:nth-child(13) {
+  --item-index: 13;
+}
+.text-square:nth-child(14) {
+  --item-index: 14;
+}
+
+/* Эффект при наведении */
+.text-square:hover {
+  animation-play-state: paused;
+  background-color: transparent !important;
+  transform: translateY(-0.3vw) scale(1.05) !important;
+  box-shadow: 0 0.5vw 1.5vw rgba(0, 0, 0, 0.2) !important;
+}
+
+.text-square:hover::before {
+  opacity: 1 !important;
+  animation-play-state: paused;
+}
+
+/* ================== ШЛЕМЫ И ОЧКИ НА МУЖЧИНЕ ================== */
+
+.doctor-helmet-on-a-man,
+.pilot-helmet-on-a-man,
+.builder-helmet-on-a-man,
+.glasses-2-on-a-man,
+.glasses-on-a-man,
+.police-helmet-on-a-man,
+.glasses-on-a-man-3,
+.chef-helmet-on-a-man {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Анимация мгновенной смены */
+@keyframes instantSwitch {
+  0%,
+  16.666% {
+    opacity: 1;
+  }
+  16.667%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Комбинация 1: Докторская шапка + очки */
+.doctor-helmet-on-a-man {
+  animation: instantSwitch 12s infinite;
+  animation-delay: 0s;
+}
+.glasses-on-a-man {
+  animation: instantSwitch 12s infinite;
+  animation-delay: 0s;
+}
+
+/* Комбинация 2: Пилотский шлем */
+.pilot-helmet-on-a-man {
+  animation: instantSwitch 12s infinite;
+  animation-delay: -10s;
+}
+
+/* Комбинация 3: Строительная каска */
+.builder-helmet-on-a-man {
+  animation: instantSwitch 12s infinite;
+  animation-delay: -8s;
+}
+
+/* Комбинация 4: Шлем полиции + очки */
+.police-helmet-on-a-man {
+  animation: instantSwitch 12s infinite;
+  animation-delay: -6s;
+}
+.glasses-on-a-man-3 {
+  animation: instantSwitch 12s infinite;
+  animation-delay: -6s;
+}
+
+/* Комбинация 5: Шефской колпак */
+.chef-helmet-on-a-man {
+  animation: instantSwitch 12s infinite;
+  animation-delay: -4s;
+}
+
+/* Комбинация 6: Пилотский шлем второй */
+.pilot-helmet-second {
+  opacity: 0;
+  pointer-events: none;
+  animation: instantSwitch 12s infinite;
+  animation-delay: -2s;
+}
+
+/* ================== АКСЕССУАРЫ (ДЫХАНИЕ) ================== */
+
+@keyframes strongBreathing {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-8px) scale(1.05);
+  }
+}
+
+.glasses,
+.chef-hemet-small,
+.builder-helmet-small,
+.glasses-2,
+.police-helmet-small,
+.glasses-3,
+.doctor-helmet-small,
+.pilot-helmet-small {
+  animation: strongBreathing 4s ease-in-out infinite;
+}
+
+.glasses {
+  animation-delay: 0s;
+  animation-duration: 3.5s;
+}
+.chef-hemet-small {
+  animation-delay: 0.7s;
+  animation-duration: 4.2s;
+}
+.builder-helmet-small {
+  animation-delay: 1.4s;
+  animation-duration: 3.8s;
+}
+.glasses-2 {
+  animation-delay: 2.1s;
+  animation-duration: 4.5s;
+}
+.police-helmet-small {
+  animation-delay: 2.8s;
+  animation-duration: 3.6s;
+}
+.glasses-3 {
+  animation-delay: 0.3s;
+  animation-duration: 4s;
+}
+.doctor-helmet-small {
+  animation-delay: 1s;
+  animation-duration: 4.3s;
+}
+.pilot-helmet-small {
+  animation-delay: 1.7s;
+  animation-duration: 3.9s;
+}
+
+/* ================== СПИРАЛИ ================== */
+
+.Spiral-1 {
+  width: 9.3vw;
+  height: 19.8vw;
+  position: absolute;
+  top: 8vw;
+  left: 4vw;
+  z-index: 2;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.Spiral-2 {
+  width: 9.3vw;
+  height: 19.8vw;
+  position: absolute;
+  top: 8vw;
+  left: 4vw;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Интерактивность спиралей */
+.Spiral-1:hover {
+  opacity: 0;
+}
+.Spiral-1:hover ~ .Spiral-2,
+.Spiral-container:hover .Spiral-2 {
+  opacity: 1;
+}
+.Spiral-2:hover {
+  opacity: 1;
+}
+
+/* ================== ПОРТАЛЫ ================== */
+
+.Portal,
+.Portal2 {
+  width: 8.4vw;
+  height: 8.4vw;
+  position: absolute;
+  top: 14vw;
+  left: 83vw;
+  z-index: 2;
+  transition: opacity 0.3s ease;
+}
+
+.Portal {
+  opacity: 1;
+}
+.Portal2 {
+  opacity: 0;
+}
+
+/* Интерактивность порталов */
+.Portal:hover {
+  opacity: 0;
+}
+.Portal:hover + .Portal2 {
+  opacity: 1;
+}
+.Portal2:hover {
+  opacity: 1;
+}
+
+/* ================== ГРАДИЕНТНЫЙ ТЕКСТ ================== */
+
+.text-line {
+  background: linear-gradient(
+    45deg,
+    #f1d915,
+    #7ee502,
+    #f83f42,
+    #28c9ff,
+    #d116ad,
+    #fe5502,
+    #f1d915
+  );
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 7vw;
+  text-transform: lowercase;
+  line-height: 1.8;
+  margin: -0.3em 0;
+  display: block;
+  animation: gradientFlow 5s linear infinite;
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Разные скорости для строк */
+.text-line:nth-child(1) {
+  animation: gradientFlow 4s linear infinite;
+}
+.text-line:nth-child(2) {
+  animation: gradientFlow 4.5s linear infinite 0.5s;
+}
+.text-line:nth-child(3) {
+  animation: gradientFlow 5s linear infinite 1s;
+}
+
+/* Коррекция отступов */
+.text-line:first-child {
+  margin-top: 0;
+}
+.text-line:last-child {
+  margin-bottom: 0;
+}
+
+/* ================== КОРЗИНА ================== */
+
+.basket {
+  transform-origin: 50% 8%;
+  animation: amplifiedWave 2.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes amplifiedWave {
+  0%,
+  100% {
+    transform: rotate(-7deg);
+  }
+  50% {
+    transform: rotate(6deg);
+  }
+}
+
+/* ================== БЕГУЩАЯ СТРОКА ================== */
+
+.footer-ticker {
+  width: 100%;
+  height: 4vw;
+  overflow: hidden;
+  background: #000;
+  border-top: var(--border) solid transparent;
+  position: relative;
+  margin-top: var(--spacing);
+  background: linear-gradient(#000, #000 0) padding-box,
+    linear-gradient(90deg, #634cce, #e21190, #7ee502, #1501ff, #624bcd)
+      border-box;
+}
+
+/* Градиентные края */
+.footer-ticker::before,
+.footer-ticker::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 6vw;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.footer-ticker::before {
+  left: 0;
+  background: linear-gradient(to right, #000, transparent);
+}
+
+.footer-ticker::after {
+  right: 0;
+  background: linear-gradient(to left, #000, transparent);
+}
+
+.ticker-track {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  animation: footerTicker 25s linear infinite;
+  white-space: nowrap;
+  will-change: transform;
+}
+
+.ticker-item {
+  background: linear-gradient(
+    90deg,
+    #f1d915,
+    #7ee502,
+    #f83f42,
+    #28c9ff,
+    #d116ad,
+    #fe5502,
+    #f1d915
+  );
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-family: "Onest";
+  font-size: 1.8vw;
+  font-weight: 500;
+  text-transform: lowercase;
+  letter-spacing: 0.05vw;
+  padding: 0 2.5vw;
+  animation: tickerGradient 5s linear infinite;
+}
+
+@keyframes footerTicker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+@keyframes tickerGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Пауза при наведении */
+.footer-ticker:hover .ticker-track,
+.footer-ticker:hover .ticker-item {
+  animation-play-state: paused;
+}
+
+/* ================== ЭЛЛИПСЫ ================== */
+
+/* Анимации движения */
+.Ellipse1,
+.Ellipse4,
+.Ellipse7 {
+  animation: moveLeft 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+.Ellipse2,
+.Ellipse5,
+.Ellipse8 {
+  animation: moveCenter 7s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+.Ellipse3,
+.Ellipse6,
+.Ellipse9 {
+  animation: moveRight 9s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Задержки */
+.Ellipse4 {
+  animation-delay: 0.3s;
+}
+.Ellipse7 {
+  animation-delay: 0.6s;
+}
+.Ellipse5 {
+  animation-delay: 0.4s;
+}
+.Ellipse8 {
+  animation-delay: 0.8s;
+}
+.Ellipse6 {
+  animation-delay: 0.5s;
+}
+.Ellipse9 {
+  animation-delay: 0.9s;
+}
+
+@keyframes moveLeft {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(-0.4vw, -0.2vw) scale(1.02);
+  }
+  50% {
+    transform: translate(-0.2vw, 0.3vw) scale(0.98);
+  }
+  75% {
+    transform: translate(-0.3vw, 0.1vw) scale(1.01);
+  }
+}
+
+@keyframes moveCenter {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  20% {
+    transform: translate(-0.3vw, -0.2vw) scale(1.02);
+  }
+  40% {
+    transform: translate(0.3vw, 0.2vw) scale(0.98);
+  }
+  60% {
+    transform: translate(-0.2vw, 0.3vw) scale(1.01);
+  }
+  80% {
+    transform: translate(0.2vw, -0.1vw) scale(0.99);
+  }
+}
+
+@keyframes moveRight {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(0.4vw, -0.2vw) scale(1.02);
+  }
+  50% {
+    transform: translate(0.2vw, 0.3vw) scale(0.98);
+  }
+  75% {
+    transform: translate(0.3vw, 0.1vw) scale(1.01);
+  }
+}
+
+/* ================== АНИМАЦИИ ДЛЯ ПЕРВОЙ СЕКЦИИ ================== */
+
+/* REPRESENTS */
+.REPRESENTS {
+  animation: moveRepresentSelective 8s linear infinite;
+}
+
+@keyframes moveRepresentSelective {
+  0% {
+    transform: translateX(-40vw);
+    z-index: 2;
+  }
+  25% {
+    transform: translateX(0);
+    z-index: 2;
+  }
+  33% {
+    z-index: 1;
+  }
+  50% {
+    transform: translateX(31.8vw);
+    z-index: 1;
+  }
+  66% {
+    z-index: 2;
+  }
+  75% {
+    transform: translateX(63.6vw);
+    z-index: 2;
+  }
+  100% {
+    transform: translateX(103.6vw);
+    z-index: 2;
+  }
+}
+
+/* BODY SWAP PROGRAM */
+.BODY-SWAP-PROGRAM {
+  animation: simpleRightToLeft 10s linear infinite;
+}
+
+@keyframes simpleRightToLeft {
+  0% {
+    left: 100vw;
+  }
+  100% {
+    left: -100vw;
+  }
+}
+
+/* Глаз */
+.eye {
+  animation: eyeZoom 3s ease-in-out infinite;
+}
+
+@keyframes eyeZoom {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Multicolored 2026 */
+.multicolored-2026 {
+  animation: softSlowShake 1.6s ease-in-out infinite;
+}
+
+@keyframes softSlowShake {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  25%,
+  75% {
+    transform: translate(0.1vw, 0.05vw);
+  }
+  50% {
+    transform: translate(-0.1vw, -0.05vw);
+  }
+}
+
+/* Стрелки и точки */
+.pink-arrow {
+  opacity: 0;
+  animation: sequence 5s infinite;
+}
+
+.dots-3 {
+  opacity: 0;
+  animation: sequence 5s infinite;
+  animation-delay: 1s;
+}
+
+.purple-arrow {
+  opacity: 0;
+  animation: sequence 5s infinite;
+  animation-delay: 2s;
+}
+
+@keyframes sequence {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  61% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* GET A NEW EXPERIENCE */
+.GET-A-NEW-EXPERIENCE {
+  animation: moveToBlock1 10s linear infinite;
+}
+
+@keyframes moveToBlock1 {
+  0% {
+    left: 85vw;
+  }
+  50% {
+    left: 15vw;
+  }
+  100% {
+    left: 85vw;
+  }
+}
+
+/* OTHERI */
+.OTHERI {
+  animation: otheriFastBreathingGradient 5s ease-in-out infinite;
+}
+
+@keyframes otheriFastBreathingGradient {
+  0% {
+    transform: scale(1);
+    background: conic-gradient(#ff3366, #4695f4, #9d4edd, #ff3366);
+  }
+  12.5% {
+    transform: scale(1.04);
+    background: conic-gradient(#ff0000, #00ff88, #8800ff, #ffff00);
+  }
+  25% {
+    transform: scale(1);
+    background: conic-gradient(#00ff00, #ff0088, #0088ff, #ff8800);
+  }
+  37.5% {
+    transform: scale(1.03);
+    background: conic-gradient(#ff00ff, #00ffff, #ffff00, #ff00ff);
+  }
+  50% {
+    transform: scale(1);
+    background: conic-gradient(#ff5500, #00ffaa, #aa00ff, #ffff00);
+  }
+  62.5% {
+    transform: scale(1.05);
+    background: conic-gradient(#ff0066, #66ff00, #0066ff, #ff6600);
+  }
+  75% {
+    transform: scale(0.98);
+    background: conic-gradient(#cc00ff, #00ffcc, #ffcc00, #cc00ff);
+  }
+  87.5% {
+    transform: scale(1.02);
+    background: conic-gradient(#ff0099, #99ff00, #0099ff, #ff9900);
+  }
+  100% {
+    transform: scale(1);
+    background: conic-gradient(#ff3366, #4695f4, #9d4edd, #ff3366);
+  }
+}
+
+/* JOIN US */
+.JOIN-US {
+  animation: joinUsBreathWithGradient 8s ease-in-out infinite;
+}
+
+@keyframes joinUsBreathWithGradient {
+  0%,
+  100% {
+    transform: scale(1);
+    background: radial-gradient(#ffffff, #646464);
+  }
+  25% {
+    transform: scale(1.02);
+    background: radial-gradient(#f8f8f8, #6a6a6a);
+  }
+  50% {
+    transform: scale(1.04);
+    background: radial-gradient(#f0f0f0, #707070);
+  }
+  75% {
+    transform: scale(1.02);
+    background: radial-gradient(#f8f8f8, #6a6a6a);
+  }
+}
+
+/* Звезды */
+.smallstar {
+  animation: smallstarSpinPulse 15s ease-in-out infinite;
+}
+
+.star-2 {
+  animation: star2SpinPulse 15s ease-in-out infinite;
+}
+
+@keyframes smallstarSpinPulse {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  25% {
+    transform: rotate(90deg) scale(1.15);
+    opacity: 0.9;
+  }
+  50% {
+    transform: rotate(180deg) scale(1);
+    opacity: 1;
+  }
+  75% {
+    transform: rotate(270deg) scale(1.1);
+    opacity: 0.95;
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes star2SpinPulse {
+  0% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  25% {
+    transform: rotate(90deg) scale(1.15);
+    opacity: 0.9;
+  }
+  50% {
+    transform: rotate(180deg) scale(1);
+    opacity: 1;
+  }
+  75% {
+    transform: rotate(270deg) scale(1.1);
+    opacity: 0.95;
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+    opacity: 1;
+  }
+}
+
+/* ================== ПАУЗА ПРИ НАВЕДЕНИИ ================== */
+
+.REPRESENTS:hover,
+.BODY-SWAP-PROGRAM:hover,
+.eye:hover,
+.GET-A-NEW-EXPERIENCE:hover {
+  animation-play-state: paused;
+}

@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "Onest";
+  src: url("../fonts/Onest-Regular.ttf") format("truetype"),
+    url("../fonts/Onest-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}

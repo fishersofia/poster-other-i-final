@@ -1,0 +1,859 @@
+@media (max-width: 415px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  :root {
+    --spacing: 2.5vw;
+    --padding: 2vw;
+    --border: 0.8vw;
+    --radius: 1.5vw;
+  }
+
+  body {
+    background-color: black;
+    font-family: "Onest";
+    margin: 0;
+    padding: var(--spacing);
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /* ОБЩИЙ КОНТЕЙНЕР ДЛЯ ВСЕХ СЕКЦИЙ */
+  .main-container {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing);
+    width: 100%;
+  }
+
+  /* === ПЕРВАЯ СЕКЦИЯ (3 блока) === */
+  .the-first-section-of-3-blocks {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing);
+    min-height: 80vw;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    position: relative;
+  }
+
+  /* Общие стили для всех 3 блоков */
+  .block1,
+  .block2,
+  .block3 {
+    width: 90%;
+    height: 100vw;
+    position: relative;
+    padding: var(--padding);
+    border: var(--border) solid transparent;
+    border-radius: var(--radius);
+    background: linear-gradient(#000, #000 0) padding-box,
+      linear-gradient(#28c9ff, #7ee502, #fe5502, #e21190) border-box;
+    overflow: visible;
+    margin: 0;
+  }
+  .block1 {
+    z-index: 1;
+  }
+
+  .block2 {
+    z-index: 3;
+  }
+
+  .block3 {
+    z-index: 1;
+  }
+
+  /* Элементы в блоке 1 */
+  .OTHERI {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 70vw;
+    height: 15vw;
+    margin-top: 5vw;
+    left: 6vw;
+    aspect-ratio: auto;
+    background: conic-gradient(#ff3366, #4695f4, #9d4edd, #ff3366);
+    font-size: 8.08vw;
+    z-index: 2;
+  }
+
+  .JOIN-US {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 70vw;
+    height: 15vw;
+    margin-top: 46vw;
+    left: 6vw;
+    aspect-ratio: auto;
+    background: radial-gradient(#ffffff, #646464);
+    font-size: 8.08vw;
+    z-index: 2;
+  }
+
+  .REPRESENTS {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 90vw;
+    height: 15vw;
+    left: var(--spacing);
+    aspect-ratio: auto;
+    background-color: #ffffff;
+    font-size: 8.08vw;
+    z-index: 10;
+    top: 15.5vw;
+  }
+
+  .BODY-SWAP-PROGRAM {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 120vw;
+    height: 15vw;
+    left: 22vw;
+    aspect-ratio: auto;
+    background: linear-gradient(#7ee502, #e2d700, #fe5502, #fe1f02);
+    font-size: 8.08vw;
+    z-index: 10;
+    top: 190vw;
+  }
+
+  .GET-A-NEW-EXPERIENCE {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 130vw;
+    height: 15vw;
+    left: 55vw;
+    aspect-ratio: auto;
+    background-color: #ffffff;
+    font-size: 8.08vw;
+    z-index: 10;
+    top: 240vw;
+  }
+
+  .smallstar {
+    position: absolute;
+    width: 27vw;
+    height: 27vw;
+    margin-top: 65.5vw;
+    margin-left: 3vw;
+    z-index: 2;
+  }
+
+  .multicolored-2026 {
+    position: absolute;
+    width: 50vw;
+    height: 30vw;
+    margin-top: 34vw;
+    margin-left: 15vw;
+    z-index: 2;
+  }
+
+  .eye {
+    position: absolute;
+    width: 30vw;
+    height: 20vw;
+    margin-top: 7vw;
+    margin-left: 25vw;
+    z-index: 2;
+  }
+
+  .pink-arrow {
+    position: absolute;
+    width: 60vw;
+    height: 15vw;
+    margin-top: 73.5vw;
+    margin-left: -15vw;
+    z-index: 2;
+  }
+
+  .dots-3 {
+    position: absolute;
+    width: 10vw;
+    height: 2vw;
+    margin-top: 81vw;
+    margin-left: 34vw;
+    z-index: 2;
+  }
+
+  .purple-arrow {
+    position: absolute;
+    width: 60vw;
+    height: 15vw;
+    margin-top: 73.5vw;
+    margin-left: 34.5vw;
+    z-index: 2;
+  }
+
+  .star-2 {
+    position: absolute;
+    width: 35vw;
+    height: 35vw;
+    margin-top: 200vw;
+    margin-left: 35vw;
+    z-index: 3;
+  }
+
+  /* === ВТОРАЯ СЕКЦИЯ === */
+  .section-container2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+
+  .second-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 50vw;
+    overflow: hidden;
+    padding: var(--padding);
+    border: var(--border) solid transparent;
+    border-radius: var(--radius);
+    background: linear-gradient(#000, #000 0) padding-box,
+      linear-gradient(#e21190, #fe5502, #e2d700, #019db4, #624bcd) border-box;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .second-section::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    height: var(--border);
+    background: black;
+    z-index: 10;
+  }
+
+  .portrait-of-a-boy {
+    width: 50vw;
+    height: 50vw;
+    position: absolute;
+    top: 3vw;
+    left: 70%;
+    transform: translateX(-50%);
+    z-index: 2;
+    object-fit: contain;
+  }
+
+  .boy-in-full-growth {
+    width: 50vw;
+    height: 46.4vw;
+    position: absolute;
+    top: 0.7vw;
+    left: -3vw;
+    z-index: 2;
+  }
+
+  .Ellipse1,
+  .Ellipse2,
+  .Ellipse3,
+  .Ellipse4,
+  .Ellipse5,
+  .Ellipse6,
+  .Ellipse7,
+  .Ellipse8,
+  .Ellipse9 {
+    width: 10vw;
+    height: 10vw;
+    position: absolute;
+    z-index: 1;
+  }
+
+  /* Позиции эллипсов */
+  .Ellipse1 {
+    top: 5.4vw;
+    left: 3vw;
+  }
+  .Ellipse2 {
+    top: 5.4vw;
+    left: 17vw;
+  }
+  .Ellipse3 {
+    top: 5.4vw;
+    left: 29vw;
+  }
+  .Ellipse4 {
+    top: 17.9vw;
+    left: 3vw;
+  }
+  .Ellipse5 {
+    top: 17.9vw;
+    left: 17vw;
+  }
+  .Ellipse6 {
+    top: 17.9vw;
+    left: 29vw;
+  }
+  .Ellipse7 {
+    top: 30.4vw;
+    left: 3vw;
+  }
+  .Ellipse8 {
+    top: 30.4vw;
+    left: 17vw;
+  }
+  .Ellipse9 {
+    top: 30.4vw;
+    left: 29vw;
+  }
+  /* === ТРЕТЬЯ СЕКЦИЯ === */
+  .section-container3 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+
+  .third-section-text {
+    width: 90%;
+    height: 36.3vw;
+    overflow: hidden;
+    padding: var(--padding);
+    border: var(--border) solid transparent;
+    border-radius: var(--radius);
+    background: linear-gradient(#000, #000 0) padding-box,
+      linear-gradient(#e21190, #fe5502, #e2d700, #019db4, #624bcd) border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    position: relative;
+  }
+
+  .text-line {
+    background: linear-gradient(
+      45deg,
+      #f1d915,
+      #7ee502,
+      #f83f42,
+      #28c9ff,
+      #d116ad,
+      #fe5502
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    font-size: 7vw;
+    text-transform: lowercase;
+    line-height: 1.8;
+    margin: -0.3em 0;
+    display: block;
+  }
+
+  /* === ЧЕТВЕРТАЯ СЕКЦИЯ === */
+  .section-container4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5vw;
+    width: 100%;
+    position: relative;
+    align-items: center;
+  }
+
+  /* Левый блок с мужчиной */
+  .bald-man-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 68vw;
+    padding: 2vw;
+    border: var(--border) solid transparent;
+    border-radius: var(--radius);
+    background: linear-gradient(#000, #000 0) padding-box,
+      linear-gradient(#e21190, #fe5502, #e2d700, #019db4, #624bcd) border-box;
+    overflow: hidden;
+  }
+
+  .custom-gradient-square {
+    position: absolute;
+    width: 49.6vw;
+    height: 47.9vw;
+    border-radius: var(--radius);
+    background: linear-gradient(#fe5502, #019db4, #7ee502);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .man {
+    position: absolute;
+    left: -0.5vw;
+    width: 52.8vw;
+    height: 54.6vw;
+    z-index: 2;
+  }
+
+  /* Аксессуары на мужчине */
+  .doctor-helmet-on-a-man {
+    position: absolute;
+    height: 65vw;
+    width: 60vw;
+    top: -13vw;
+    left: 12vw;
+    z-index: 3;
+  }
+
+  .pilot-helmet-on-a-man {
+    position: absolute;
+    width: 45.5vw;
+    height: 45.4vw;
+    top: 5.5vw;
+    left: 19vw;
+    z-index: 5;
+  }
+
+  .builder-helmet-on-a-man {
+    position: absolute;
+    height: 40.5vw;
+    width: 40.5vw;
+    top: -3vw;
+    left: 21.5vw;
+    z-index: 3;
+  }
+
+  .glasses-on-a-man {
+    position: absolute;
+    height: 40vw;
+    width: 40.6vw;
+    top: 11vw;
+    left: 20vw;
+    z-index: 4;
+  }
+
+  .police-helmet-on-a-man {
+    position: absolute;
+    width: 50.8vw;
+    height: 37.1vw;
+    top: -2vw;
+    left: 16.5vw;
+    z-index: 5;
+  }
+
+  .glasses-on-a-man-3 {
+    position: absolute;
+    width: 30.4vw;
+    height: 10.6vw;
+    top: 35vw;
+    left: 26.5vw;
+    z-index: 5;
+  }
+
+  .chef-helmet-on-a-man {
+    position: absolute;
+    height: 63vw;
+    width: 63vw;
+    top: -14vw;
+    left: 11vw;
+    z-index: 3;
+  }
+
+  /* Правый блок с аксессуарами и профессиями */
+  .section-accessories-job-titles {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 32vw;
+    gap: var(--spacing);
+  }
+
+  /* Верхний блок с аксессуарами */
+  .section-accessories {
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+    padding: 1.5vw;
+    border: var(--border) solid transparent;
+    border-radius: var(--radius);
+    background: linear-gradient(#000, #000 0) padding-box,
+      linear-gradient(#e21190, #fe5502, #e2d700, #019db4, #624bcd) border-box;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5vw;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+  }
+
+  .squares-for-accessories {
+    width: 8vw;
+    height: 8vw;
+    background: conic-gradient(#7ee502, #fe5502, #28c9ff, #e21190, #7ee502);
+    border-radius: 0.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 calc(25% - 1.125vw);
+  }
+
+  /* Аксессуары */
+  .glasses {
+    width: 8vw;
+    height: 8vw;
+    z-index: 3;
+    left: 2vw;
+    top: 7vw;
+  }
+
+  .chef-hemet-small {
+    width: 7.4vw;
+    height: 3.8vw;
+    z-index: 3;
+    left: 12vw;
+    top: 8.3vw;
+  }
+
+  .builder-helmet-small {
+    width: 6.1vw;
+    height: 6.1vw;
+    z-index: 3;
+    left: 22vw;
+    top: 8.3vw;
+  }
+
+  .glasses-2 {
+    width: 9.6vw;
+    height: 6vw;
+    z-index: 3;
+    left: 29.8vw;
+    top: 8.3vw;
+  }
+
+  .police-helmet-small {
+    width: 6.7vw;
+    height: 4.9vw;
+    z-index: 3;
+    left: 2vw;
+    top: 18vw;
+  }
+
+  .glasses-3 {
+    width: 7.7vw;
+    height: 3.2vw;
+    z-index: 3;
+    left: 11.8vw;
+    top: 19vw;
+  }
+
+  .doctor-helmet-small {
+    width: 9vw;
+    height: 8vw;
+    z-index: 3;
+    left: 20.8vw;
+    top: 17vw;
+  }
+
+  .pilot-helmet-small {
+    width: 6.3vw;
+    height: 6.8vw;
+    z-index: 3;
+    left: 31.8vw;
+    top: 17vw;
+  }
+
+  /* Нижний блок с профессиями */
+  .section-job-titles {
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+    padding: 1.5vw;
+    border: var(--border) solid transparent;
+    border-radius: var(--radius);
+    background: linear-gradient(#000, #000 0) padding-box,
+      linear-gradient(#e21190, #fe5502, #e2d700, #019db4, #624bcd) border-box;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5vw;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .text-square {
+    flex: 0 0 calc(33.333% - 1vw);
+    height: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 0.8vw;
+    font-family: "Onest", sans-serif;
+    font-weight: 700;
+    font-size: 2.5vw;
+    color: #000000;
+    text-align: center;
+    letter-spacing: 0.05vw;
+    padding: 0.5vw;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.1;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .text-square:nth-child(7),
+  .text-square:nth-child(8),
+  .text-square:nth-child(9) {
+    display: none !important;
+  }
+
+  .text-square::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0.8vw;
+    z-index: -1;
+  }
+
+  /* === ПЯТАЯ СЕКЦИЯ  === */
+  .section-container5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--spacing);
+    width: 100%;
+    margin: 0;
+    align-items: center;
+  }
+
+  .section-3men-flowers {
+    position: relative;
+    margin: 0 auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    border-radius: var(--radius);
+    padding: var(--padding);
+  }
+
+  .section-3men-background {
+    width: 130% !important;
+    height: 130% !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    z-index: 1;
+    display: block;
+    margin-left: -10vw;
+  }
+
+  .section-spiraltext-spiral {
+    display: flex !important;
+    flex-direction: row !important;
+    width: 90% !important;
+    height: 40vw;
+    gap: var(--spacing);
+    margin: 0 auto !important;
+  }
+
+  .section-spiraltext-spiral > *:first-child {
+    width: 56vw !important;
+    height: 100% !important;
+    padding: var(--padding) !important;
+    border: var(--border) solid transparent !important;
+    border-radius: var(--radius) !important;
+    background: linear-gradient(#000, #000 0) padding-box,
+      linear-gradient(#28c9ff, #7ee502, #fe5502, #e21190) border-box !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+
+  .section-spiraltext {
+    width: 60vw !important;
+    height: 100% !important;
+    padding: var(--padding) !important;
+    border: var(--border) solid transparent !important;
+    border-radius: var(--radius) !important;
+    background: linear-gradient(#000, #000 0) padding-box,
+      linear-gradient(#28c9ff, #7ee502, #fe5502, #e21190) border-box !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+
+  .blue-flower {
+    width: 5vw !important;
+    height: 4.9vw !important;
+    position: absolute;
+    top: 3.5vw;
+    left: 67vw !important;
+    z-index: 2;
+  }
+
+  .yellow-flower {
+    width: 6.5vw;
+    height: 6.3vw;
+    position: absolute;
+    top: 11.5vw !important;
+    left: 65.5vw !important;
+    z-index: 2;
+  }
+
+  .orange-flower {
+    width: 6.4vw !important;
+    height: 6.2vw !important;
+    position: absolute;
+    top: 7vw !important;
+    left: 59vw !important;
+    z-index: 2;
+  }
+
+  .red-flower {
+    width: 5vw !important;
+    height: 5.9vw !important;
+    position: absolute;
+    top: 12.4vw !important;
+    left: 51.5vw !important;
+    z-index: 2;
+  }
+
+  .green-flower {
+    width: 4.2vw !important;
+    height: 4.1vw !important;
+    position: absolute;
+    top: 7vw !important;
+    left: 50vw !important;
+    z-index: 2;
+  }
+
+  .pink-flower {
+    width: 4vw !important;
+    height: 3.9vw !important;
+    position: absolute;
+    top: 3vw !important;
+    left: 55vw !important;
+    z-index: 2;
+  }
+
+  .doctor-slide-1,
+  .doctor-slide-2,
+  .doctor-slide-3 {
+    position: absolute;
+    top: 1vw;
+    left: -37vw !important;
+    width: 85vw !important;
+    height: 85vw !important;
+    z-index: 2;
+    opacity: 0;
+    animation: gentleHumanMovement 9s infinite;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .police-slide-1,
+  .police-slide-2,
+  .police-slide-3 {
+    position: absolute;
+    top: 11vw;
+    left: 25vw !important;
+    width: 75vw !important;
+    height: 75vw !important;
+    z-index: 3;
+    object-fit: contain;
+    opacity: 0;
+    animation: gentleHumanMovement 9s infinite;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Анимация для пожарных */
+  .fireman-slide-1,
+  .fireman-slide-2,
+  .fireman-slide-3 {
+    position: absolute;
+    top: 0vw;
+    left: -13vw !important;
+    width: 90vw !important;
+    height: 90vw !important;
+    z-index: 3;
+    opacity: 0;
+    animation: gentleHumanMovement 9s infinite;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* =========================================== */
+  /* НЕНУЖНЫЕ ЭЛЕМЕНТЫ НА МОБИЛЬНЫХ */
+  /* =========================================== */
+  .human-body,
+  .hand,
+  .basket .Spiral-2 .Spiral-1 {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    animation: none !important;
+    transform: none !important;
+  }
+
+  .Spiral-1,
+  .Spiral-2,
+  .Portal,
+  .Portal2,
+  .basket {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+
+  .human-body *,
+  .hand *,
+  .basket * {
+    animation: none !important;
+  }
+
+  .section-container5::after {
+    content: "";
+    display: block;
+    height: 5vw;
+    width: 100%;
+  }
+
+  .footer-ticker {
+    width: 100%;
+    height: 4vw;
+    overflow: hidden;
+    background: #000;
+    border-top: var(--border) solid transparent;
+    position: relative;
+    margin-top: var(--spacing);
+    background: linear-gradient(#000, #000 0) padding-box,
+      linear-gradient(90deg, #634cce, #e21190, #7ee502, #1501ff, #624bcd)
+        border-box;
+    z-index: 1 !important;
+    position: relative !important;
+  }
+}

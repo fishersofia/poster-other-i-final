@@ -1,0 +1,902 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --spacing: 3vw;
+  --padding: 2vw;
+  --border: 0.58vw;
+  --radius: 1.11vw;
+}
+
+body {
+  background-color: black;
+  font-family: "Onest";
+  margin: 0;
+  padding: var(--padding);
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* ОБЩИЙ КОНТЕЙНЕР ДЛЯ ВСЕХ СЕКЦИЙ */
+.main-container {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+  width: 100%;
+}
+
+/* === ПЕРВАЯ СЕКЦИЯ (3 блока) === */
+.the-first-section-of-3-blocks {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing);
+  position: relative;
+  min-height: 48.6vw;
+}
+
+/* Общие стили для всех 3 блоков */
+.block1,
+.block2,
+.block3 {
+  width: 29.4vw;
+  height: 48.6vw;
+  position: relative;
+  padding: var(--padding);
+  border: var(--border) solid transparent;
+  border-radius: var(--radius);
+  background: linear-gradient(#000, #000 0) padding-box,
+    linear-gradient(#28c9ff, #7ee502, #fe5502, #e21190) border-box;
+  overflow: visible;
+}
+.block1 {
+  z-index: 1;
+}
+
+.block2 {
+  z-index: 3;
+}
+
+.block3 {
+  z-index: 1;
+}
+
+.OTHERI {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 23.2vw;
+  height: 5.8vw;
+  margin-top: 2vw;
+  left: var(--padding);
+  aspect-ratio: auto; /* Убираем aspect-ratio: 1 */
+  background: conic-gradient(#ff3366, #4695f4, #9d4edd, #ff3366);
+  font-size: 5.08vw;
+  z-index: 2;
+}
+
+.JOIN-US {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 23.8vw;
+  height: 5.8vw;
+  margin-top: 28vw;
+  left: 2vw;
+  aspect-ratio: auto;
+  background: radial-gradient(#ffffff, #646464);
+  font-size: 5.08vw;
+  z-index: 2;
+}
+
+.REPRESENTS {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 36vw;
+  height: 5.8vw;
+  margin-top: 12.5vw;
+  left: var(--padding);
+  aspect-ratio: auto;
+  background-color: #ffffff;
+  font-size: 5.08vw;
+  z-index: 2;
+}
+
+.BODY-SWAP-PROGRAM {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 60.2vw;
+  height: 5.8vw;
+  margin-top: 21.5vw;
+  left: 25vw;
+  aspect-ratio: auto;
+  background: linear-gradient(#7ee502, #e2d700, #fe5502, #fe1f02);
+  font-size: 5.08vw;
+  z-index: 2;
+}
+
+.GET-A-NEW-EXPERIENCE {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 63vw;
+  height: 5.8vw;
+  margin-top: 40vw;
+  left: 65vw;
+  aspect-ratio: auto;
+  background-color: #ffffff;
+  font-size: 5.08vw;
+  z-index: 2;
+}
+
+.smallstar {
+  position: absolute;
+  width: 8.8vw;
+  height: 8.5vw;
+  margin-top: 36vw;
+  margin-left: -1vw;
+  z-index: 2;
+}
+
+.multicolored-2026 {
+  position: absolute;
+  width: 22.1vw;
+  height: 6.6vw;
+  margin-top: 18.6vw;
+  margin-left: 1vw;
+  z-index: 2;
+}
+
+.eye {
+  position: absolute;
+  width: 13.4vw;
+  height: 8.4vw;
+  margin-top: 2vw;
+  margin-left: 5.2vw;
+  z-index: 2;
+}
+
+.pink-arrow {
+  position: absolute;
+  width: 6.8vw;
+  height: 4.9vw;
+  margin-top: 37.5vw;
+  margin-left: 0.3vw;
+  z-index: 2;
+}
+
+.dots-3 {
+  position: absolute;
+  width: 4.1vw;
+  height: 0.4vw;
+  margin-top: 39.5vw;
+  margin-left: 9.8vw;
+  z-index: 2;
+}
+
+.purple-arrow {
+  position: absolute;
+  width: 6.8vw;
+  height: 4.9vw;
+  margin-top: 37.5vw;
+  margin-left: 17vw;
+  z-index: 2;
+}
+
+.star-2 {
+  position: absolute;
+  width: 10vw;
+  height: 11vw;
+  margin-top: 1vw;
+  margin-left: 78vw;
+  z-index: 2;
+}
+
+/* === ВТОРАЯ СЕКЦИЯ === */
+.section-container2 {
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.second-section {
+  width: 94.3vw;
+  height: 36.3vw;
+  overflow: visible;
+  padding: var(--padding);
+  border: var(--border) solid transparent;
+  border-radius: var(--radius);
+  background: linear-gradient(#000, #000 0) padding-box,
+    linear-gradient(#e21190, #fe5502, #e2d700, #019db4, #624bcd) border-box;
+  position: relative;
+}
+
+.human-body {
+  width: 32.9vw;
+  height: 35.1vw;
+  position: absolute;
+  top: 0vw;
+  left: 53.5vw;
+  z-index: 2;
+}
+
+.hand {
+  width: 6.1vw;
+  height: 12.9vw;
+  position: absolute;
+  top: 0vw;
+  left: 83.5vw;
+  z-index: 3;
+}
+
+.basket {
+  width: 30vw;
+  height: 30vw;
+  position: absolute;
+  top: 6.9vw;
+  left: 70vw;
+  z-index: 2;
+}
+
+.portrait-of-a-boy {
+  width: 32.5vw;
+  height: 32.5vw;
+  position: absolute;
+  top: 4.5vw;
+  left: 42vw;
+  transform: translateX(-50%);
+  z-index: 2;
+  overflow: visible;
+}
+
+.portrait-of-a-boy img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.boy-in-full-growth {
+  width: 24vw;
+  height: 33.4vw;
+  position: absolute;
+  top: 0.7vw;
+  left: 2vw;
+  z-index: 2;
+}
+
+.Ellipse1,
+.Ellipse2,
+.Ellipse3,
+.Ellipse4,
+.Ellipse5,
+.Ellipse6,
+.Ellipse7,
+.Ellipse8,
+.Ellipse9 {
+  width: 7vw;
+  height: 7vw;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Позиции эллипсов */
+.Ellipse1 {
+  top: 5.4vw;
+  left: 2vw;
+}
+.Ellipse2 {
+  top: 5.4vw;
+  left: 11vw;
+}
+.Ellipse3 {
+  top: 5.4vw;
+  left: 20vw;
+}
+.Ellipse4 {
+  top: 13.9vw;
+  left: 2vw;
+}
+.Ellipse5 {
+  top: 14.4vw;
+  left: 11vw;
+}
+.Ellipse6 {
+  top: 14.4vw;
+  left: 20vw;
+}
+.Ellipse7 {
+  top: 23.4vw;
+  left: 2vw;
+}
+.Ellipse8 {
+  top: 23.4vw;
+  left: 11vw;
+}
+.Ellipse9 {
+  top: 23.4vw;
+  left: 20vw;
+}
+/* === ТРЕТЬЯ СЕКЦИЯ === */
+.section-container3 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.third-section-text {
+  width: 94.3vw;
+  height: 36.3vw;
+  overflow: hidden;
+  padding: var(--padding);
+  border: var(--border) solid transparent;
+  border-radius: var(--radius);
+  background: linear-gradient(#000, #000 0) padding-box,
+    linear-gradient(#624bcc, #7ee502, #fe5502, #f83f42, #28c9ff) border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  position: relative;
+}
+
+.text-line {
+  background: linear-gradient(
+    45deg,
+    #f1d915,
+    #7ee502,
+    #f83f42,
+    #28c9ff,
+    #d116ad,
+    #fe5502
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  font-size: 7vw;
+  text-transform: lowercase;
+  line-height: 1.8;
+  margin: -0.3em 0;
+  display: block;
+}
+
+.text-line:first-child {
+  margin-top: 0;
+}
+
+.text-line:last-child {
+  margin-bottom: 0;
+}
+
+.Spiral-1,
+.Spiral-2 {
+  width: 9.3vw;
+  height: 19.8vw;
+  position: absolute;
+  top: 8vw;
+  left: 4vw;
+  z-index: 2;
+}
+
+.Portal,
+.Portal2 {
+  width: 8.4vw;
+  height: 8.4vw;
+  position: absolute;
+  top: 14vw;
+  right: 4vw;
+  z-index: 2;
+}
+
+/* === ЧЕТВЕРТАЯ СЕКЦИЯ === */
+.section-container4 {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing);
+  width: 100%;
+  position: relative;
+}
+
+/* Левый блок с мужчиной */
+.bald-man-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45.6vw;
+  height: 58vw;
+  padding: var(--padding);
+  border: var(--border) solid transparent;
+  border-radius: var(--radius);
+  background: linear-gradient(#000, #000 0) padding-box,
+    linear-gradient(#28c9ff, #7ee502, #f83f42, #fe5502, #8e30cf) border-box;
+}
+
+.custom-gradient-square {
+  position: absolute;
+  width: 39.6vw;
+  height: 37.9vw;
+  border-radius: var(--radius);
+  background: linear-gradient(#fe5502, #019db4, #7ee502);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.man {
+  position: absolute;
+  left: -0.5vw;
+  width: 42.8vw;
+  height: 44.6vw;
+  z-index: 2;
+}
+
+/* Аксессуары на мужчине */
+.doctor-helmet-on-a-man {
+  position: absolute;
+  height: 48vw;
+  width: 48vw;
+  top: -8vw;
+  left: -2vw;
+  z-index: 3;
+}
+
+.pilot-helmet-on-a-man {
+  position: absolute;
+  width: 39.5vw;
+  height: 40.4vw;
+  top: 5.5vw;
+  left: 2.5vw;
+  z-index: 5;
+}
+
+.builder-helmet-on-a-man {
+  position: absolute;
+  height: 32.5vw;
+  width: 32.5vw;
+  top: 0vw;
+  left: 5.9vw;
+  z-index: 3;
+}
+
+.glasses-2-on-a-man {
+  position: absolute;
+  width: 40.9vw;
+  height: 23vw;
+  top: 20vw;
+  left: 1vw;
+  z-index: 5;
+}
+
+.glasses-on-a-man {
+  position: absolute;
+  height: 33.6vw;
+  width: 33.6vw;
+  top: 11vw;
+  left: 2.7vw;
+  z-index: 4;
+}
+
+.police-helmet-on-a-man {
+  position: absolute;
+  width: 38.8vw;
+  height: 30.1vw;
+  top: 1vw;
+  left: 3vw;
+  z-index: 5;
+}
+
+.glasses-on-a-man-3 {
+  position: absolute;
+  width: 30.4vw;
+  height: 10.6vw;
+  top: 25vw;
+  left: 6.5vw;
+  z-index: 5;
+}
+
+.chef-helmet-on-a-man {
+  overflow: visible;
+  position: absolute;
+  height: 47vw;
+  width: 47vw;
+  top: -7vw;
+  left: -0.7vw;
+  z-index: 3;
+}
+
+/* Правый блок с аксессуарами и профессиями */
+.section-accessories-job-titles {
+  display: flex;
+  flex-direction: column;
+  width: 45.6vw;
+  height: 58vw;
+  gap: var(--spacing);
+}
+
+/* Верхний блок с аксессуарами */
+.section-accessories {
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  padding: 1.5vw;
+  border: var(--border) solid transparent;
+  border-radius: var(--radius);
+  background: linear-gradient(#000, #000 0) padding-box,
+    linear-gradient(#28c9ff, #7ee502, #f83f42, #fe5502, #8e30cf) border-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5vw;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.squares-for-accessories {
+  width: 8vw;
+  height: 8vw;
+  background: conic-gradient(#7ee502, #fe5502, #28c9ff, #e21190, #7ee502);
+  border-radius: 0.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 calc(25% - 1.125vw);
+}
+
+.glasses {
+  position: absolute;
+  width: 8vw;
+  height: 8vw;
+  top: 5vw;
+  left: 52.3vw;
+  z-index: 3;
+}
+
+.chef-hemet-small {
+  position: absolute;
+  width: 7.4vw;
+  height: 3.8vw;
+  top: 7.2vw;
+  left: 63.2vw;
+  z-index: 3;
+}
+
+.builder-helmet-small {
+  position: absolute;
+  width: 6.1vw;
+  height: 6.1vw;
+  top: 6.2vw;
+  left: 74.5vw;
+  z-index: 3;
+}
+
+.glasses-2 {
+  position: absolute;
+  width: 10.6vw;
+  height: 6vw;
+  top: 6.3vw;
+  left: 83.1vw;
+  z-index: 3;
+}
+
+.police-helmet-small {
+  position: absolute;
+  width: 6.7vw;
+  height: 4.9vw;
+  top: 16.1vw;
+  left: 63.5vw;
+  z-index: 3;
+}
+
+.glasses-3 {
+  position: absolute;
+  width: 7.7vw;
+  height: 3.2vw;
+  top: 17.1vw;
+  left: 73.8vw;
+  z-index: 3;
+}
+
+.doctor-helmet-small {
+  position: absolute;
+  width: 9vw;
+  height: 8vw;
+  top: 14.5vw;
+  left: 83.9vw;
+  z-index: 3;
+}
+
+.pilot-helmet-small {
+  position: absolute;
+  width: 6.3vw;
+  height: 6.8vw;
+  top: 15.4vw;
+  left: 53vw;
+  z-index: 3;
+}
+
+/* Нижний блок с профессиями */
+.section-job-titles {
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  padding: 1.5vw;
+  border: var(--border) solid transparent;
+  border-radius: var(--radius);
+  background: linear-gradient(#000, #000 0) padding-box,
+    linear-gradient(#8e31cf, #7ee502, #f83f42, #28c9ff, #fe5502) border-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5vw;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100%;
+}
+
+.text-square {
+  flex: 0 0 calc(33.333% - 1vw);
+  height: 5vw;
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 0.5vw;
+  font-family: "Onest", sans-serif;
+  font-weight: 700;
+  font-size: 2vw;
+  color: #000000;
+  text-align: center;
+  letter-spacing: 0.05vw;
+  padding: 0.6vw;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1.1;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.text-square::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 0.5vw;
+  z-index: -1;
+}
+
+.text-square:nth-child(n + 10) {
+  display: none;
+}
+
+.section-job-titles::before,
+.section-job-titles::after {
+  content: "";
+  flex-basis: 100%;
+  width: 0;
+  height: 0;
+}
+
+/* === ПЯТАЯ СЕКЦИЯ === */
+.section-container5 {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing);
+  width: 100%;
+}
+
+/* Левая колонка с двумя блоками */
+.section-spiraltext-spiral {
+  display: flex;
+  flex-direction: column;
+  width: 25.7vw;
+  height: 67.4vw;
+  gap: var(--spacing);
+}
+
+/* Верхний блок в левой колонке */
+.section-spiraltext {
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  padding: var(--padding);
+  border: var(--border) solid transparent;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(#000, #000 0) padding-box,
+    linear-gradient(#8e31cf, #7ee502, #e21190, #1500ff) border-box;
+  overflow: hidden;
+}
+
+/* Элементы в section-spiraltext */
+.skinyourskin1,
+.skinyourskin2,
+.skinyourskin3,
+.skinyourskin4,
+.skinyourskin5,
+.skinyourskin6 {
+  object-fit: contain;
+  position: absolute;
+  z-index: 2;
+}
+
+.skinyourskin1 {
+  width: 4.1vw;
+  height: 4.1vw;
+}
+.skinyourskin2 {
+  width: 5.8vw;
+  height: 5.8vw;
+}
+.skinyourskin3 {
+  width: 8.2vw;
+  height: 8.2vw;
+}
+.skinyourskin4 {
+  width: 11.3vw;
+  height: 11.3vw;
+}
+.skinyourskin5 {
+  width: 15.5vw;
+  height: 15.5vw;
+}
+.skinyourskin6 {
+  width: 21.3vw;
+  height: 21.3vw;
+}
+
+/* Нижний блок в левой колонке */
+.section-spiral {
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  padding: var(--padding);
+  border: var(--border) solid transparent;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(#000, #000 0) padding-box,
+    linear-gradient(#1501ff, #7ee502, #e21190, #634cce) border-box;
+  overflow: hidden;
+}
+
+.spiral {
+  object-fit: contain;
+  position: absolute;
+  width: 19.2vw;
+  height: 19.6vw;
+}
+
+/* Правый блок с 3 мужчинами и цветами */
+.section-3men-flowers {
+  width: 65.9vw;
+  height: 67.4vw;
+  position: relative;
+}
+
+.section-3men-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Цветы */
+.blue-flower {
+  width: 4vw;
+  height: 3.9vw;
+  position: absolute;
+  top: 3vw;
+  left: 60vw;
+  z-index: 2;
+}
+
+.yellow-flower {
+  width: 6.5vw;
+  height: 6.3vw;
+  position: absolute;
+  top: 8vw;
+  left: 56.5vw;
+  z-index: 2;
+}
+
+.orange-flower {
+  width: 5.4vw;
+  height: 5.2vw;
+  position: absolute;
+  top: 5.5vw;
+  left: 50vw;
+  z-index: 2;
+}
+
+.red-flower {
+  width: 4vw;
+  height: 3.9vw;
+  position: absolute;
+  top: 10.9vw;
+  left: 46.5vw;
+  z-index: 2;
+}
+
+.green-flower {
+  width: 4.2vw;
+  height: 4.1vw;
+  position: absolute;
+  top: 1.5vw;
+  left: 46vw;
+  z-index: 2;
+}
+
+.pink-flower {
+  width: 4vw;
+  height: 3.9vw;
+  position: absolute;
+  top: 1.5vw;
+  left: 55vw;
+  z-index: 2;
+}
+
+/* Анимации */
+@keyframes fadeChange {
+  0%,
+  33% {
+    opacity: 1;
+  }
+  34%,
+  100% {
+    opacity: 0;
+  }
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.squares-for-accessories {
+  width: 8vw !important;
+  height: 8vw !important;
+  background: conic-gradient(
+    #7ee502,
+    #fe5502,
+    #28c9ff,
+    #e21190,
+    #7ee502
+  ) !important;
+  border-radius: 0.5vw !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex: 0 0 calc(25% - 1.125vw) !important;
+
+  .portrait-of-a-boy {
+    background-color: black !important;
+  }
+}
